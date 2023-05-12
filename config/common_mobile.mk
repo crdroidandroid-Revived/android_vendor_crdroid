@@ -3,8 +3,13 @@ $(call inherit-product, vendor/lineage/config/common.mk)
 
 # Default notification/alarm sounds
 PRODUCT_PRODUCT_PROPERTIES += \
+<<<<<<< HEAD
     ro.config.notification_sound=Chime.ogg \
     ro.config.alarm_alert=Argon.ogg
+=======
+    ro.config.notification_sound=Argon.ogg \
+    ro.config.alarm_alert=Hassium.ogg
+>>>>>>> pick/lineage-17.1
 
 ifneq ($(TARGET_BUILD_VARIANT),user)
 # Thank you, please drive thru!
@@ -27,12 +32,37 @@ PRODUCT_PACKAGES += \
     AudioFX \
     Backgrounds \
     Eleven \
+<<<<<<< HEAD
+=======
+    Etar \
+>>>>>>> pick/lineage-17.1
     Jelly \
     LockClock \
     Profiles \
     Seedvault \
+<<<<<<< HEAD
     WeatherProvider
 
+=======
+    TrebuchetQuickStep \
+    WeatherProvider
+
+# Accents
+PRODUCT_PACKAGES += \
+    LineageBlackTheme \
+    LineageDarkTheme \
+    LineageBlackAccent \
+    LineageBlueAccent \
+    LineageBrownAccent \
+    LineageCyanAccent \
+    LineageGreenAccent \
+    LineageOrangeAccent \
+    LineagePinkAccent \
+    LineagePurpleAccent \
+    LineageRedAccent \
+    LineageYellowAccent
+
+>>>>>>> pick/lineage-17.1
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images
@@ -45,6 +75,13 @@ PRODUCT_PACKAGES += \
     libhealthd.lineage
 endif
 
+<<<<<<< HEAD
+=======
+# Customizations
+PRODUCT_PACKAGES += \
+    LineageNavigationBarNoHint
+
+>>>>>>> pick/lineage-17.1
 # Media
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     media.recorder.show_manufacturer_and_model=true

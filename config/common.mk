@@ -184,11 +184,16 @@ endif
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
     SystemUI \
+<<<<<<< HEAD
     Launcher3QuickStep
+=======
+    TrebuchetQuickStep
+>>>>>>> pick/lineage-17.1
 
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/common
 
+<<<<<<< HEAD
 ifeq ($(TARGET_HAS_FOD),true)
 DEVICE_PACKAGE_OVERLAYS += vendor/lineage/overlay/fod
 endif
@@ -196,6 +201,11 @@ endif
 # Product version should match Android version
 PRODUCT_VERSION_MAJOR = 10
 PRODUCT_VERSION_MINOR = 0
+=======
+PRODUCT_VERSION_MAJOR = 17
+PRODUCT_VERSION_MINOR = 1
+PRODUCT_VERSION_MAINTENANCE := 0
+>>>>>>> pick/lineage-17.1
 
 # Increase CR Version with each major release.
 CR_VERSION := 6.27
